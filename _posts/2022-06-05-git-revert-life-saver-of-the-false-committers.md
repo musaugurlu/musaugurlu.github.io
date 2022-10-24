@@ -33,6 +33,7 @@ git push origin
 > **Note:** You can only revert change commits. Merge commits (created when PR merges) cannot be reverted as they are not a change but a group of change commits. Check out the [Revert Multiple Commits](#revert-multiple-commits) section for options to revert merge commits.
 
 ![Single Revert](single-revert.png)
+_Single Commit Revert_
 
 ## Revert Multiple Commits
 
@@ -47,3 +48,4 @@ If you reset your branch and push it to the remote repository, Git will compare 
 If you reset your branch to one of the previous commits and push it to the remote repository, you will see errors below.
 
 ![Reset vs Revert](gitresetvsrevert.png)
+_Git Reset vs. Git Revert_
