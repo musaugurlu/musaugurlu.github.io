@@ -1,4 +1,4 @@
-# MusaUgurlu.com Github Page
+# MusaUgurlu.com
 
 ## URL
 
