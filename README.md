@@ -1,7 +1,4 @@
-<div align="center">
-  # Musa Ugurlu
-
-</div>
+# MusaUgurlu.com Github Page
 
 ## URL
 
