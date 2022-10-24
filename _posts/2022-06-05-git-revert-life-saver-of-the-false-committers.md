@@ -2,8 +2,10 @@
 layout: post
 title: "Git Revert: Life Saver of the False Committers"
 description: "Git Revert: Life Saver of the False Committers"
-image: /assets/img/posts/2022-06-05-git-revert-life-saver-of-the-false-committers/single-revert.png
-category: [DevOps, Git]
+img_path: /assets/img/posts/2022-06-05-git-revert-life-saver-of-the-false-committers
+image:
+  path: single-revert.png
+categories: [DevOps, Git]
 tags: [git, cloud]
 date: 2022-06-04 16:00 -0400
 ---
@@ -19,15 +21,18 @@ With git revert, you can revert [a single commit](#revert-single-commit) or [mul
 With Git revert, you can revert a single commit. Git will create a new commit with the revert message and revert the changes in the given commit. If there is a conflict, you have to resolve it, add it to track with Git add, then create a commit. Finally, you can push your revert to the remote repository.
 
 **The Command:**
+{% raw %}
 
 ```console
 git revert <commit SHA id>
 git push origin
 ```
 
+{% endraw %}
+
 > **Note:** You can only revert change commits. Merge commits (created when PR merges) cannot be reverted as they are not a change but a group of change commits. Check out the [Revert Multiple Commits](#revert-multiple-commits) section for options to revert merge commits.
 
-![Single Revert](/assets/img/posts/2022-06-05-git-revert-life-saver-of-the-false-committers/single-revert.png)
+![Single Revert](single-revert.png)
 
 ## Revert Multiple Commits
 
@@ -41,4 +46,4 @@ If you reset your branch and push it to the remote repository, Git will compare 
 
 If you reset your branch to one of the previous commits and push it to the remote repository, you will see errors below.
 
-![Reset vs Revert](/assets/img/posts/2022-06-05-git-revert-life-saver-of-the-false-committers/gitresetvsrevert.png)
+![Reset vs Revert](gitresetvsrevert.png)

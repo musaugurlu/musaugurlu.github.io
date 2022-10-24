@@ -10,10 +10,6 @@
   icon: "fab fa-linkedin" # icons powered by <https://fontawesome.com/>
   url: "https://www.linkedin.com/in/musaugurlu" # Fill with your Linkedin homepage
 
-- type: email
-  icon: "fas fa-envelope"
-  noblank: true # open link in current tab
-
 - type: rss
   icon: "fas fa-rss"
   noblank: true
@@ -26,3 +22,7 @@
 #   type: stack-overflow
 #   icon: 'fab fa-stack-overflow'
 #   url:  ''                  # Fill with your stackoverflow homepage
+
+# - type: email
+#   icon: "fas fa-envelope"
+#   noblank: true # open link in current tab

@@ -1,13 +1,11 @@
 ---
 layout: post
-title:
-  Working with Multiple Subscriptions, AKS Clusters, and K8s Namespaces in Azure
-  CLI
-description:
-  Working with Multiple Subscriptions, AKS Clusters, and K8s Namespaces
-  in Azure CLI
-image: /assets/img/posts/2021-10-06-working-with-multiple-subscriptions-in-azure-cli/k8s2.jpg
-category: [Azure, AKS]
+title: Working with Multiple Subscriptions, AKS Clusters, and K8s Namespaces in Azure CLI
+description: Working with Multiple Subscriptions, AKS Clusters, and K8s Namespaces in Azure CLI
+img_path: /assets/img/posts/2021-10-06-working-with-multiple-subscriptions-in-azure-cli
+image:
+  path: k8s2.jpg
+categories: [Azure, AKS]
 tags: [cloud, k8s, kubernetes, azurecli, cli, aks]
 date: 2021-10-06 16:00 -0400
 ---
@@ -35,9 +33,11 @@ Both Azure CLI and kubectl let you set your config directories by setting the `A
 
 I have four subscriptions that I am working on every day. I created a folder for each of my subscription/environments in my home directory, and I wrote a script to set those variables dynamically.
 
-![Folder](/assets/img/posts/2021-10-06-working-with-multiple-subscriptions-in-azure-cli/k8s1.jpg)
+![Folder](k8s1.jpg)
 
 ### For macOS (zsh shell or bash):
+
+{% raw %}
 
 ```shell
 export AZURE_CONFIG_DIR=~/az-profiles/dev
@@ -172,6 +172,8 @@ function Set-AZProfile {
 }
 ```
 
+{% endraw %}
+
 ## How Scripts Work
 
 In macOS, you will need to add the first script to the end of your `~/.zshrc` file if you use zsh or `~/.bashrc` if you use bash.
@@ -186,9 +188,9 @@ The script accepts two commands; **show** and **set**.
 
 > Even though both scripts do the same thing, they are slightly different because of the concepts of \*nix shells and PowerShell.
 
-![azget](/assets/img/posts/2021-10-06-working-with-multiple-subscriptions-in-azure-cli/k8s2.jpg)
+![azget](k8s2.jpg)
 
-![azset](/assets/img/posts/2021-10-06-working-with-multiple-subscriptions-in-azure-cli/k8s3.jpg)
+![azset](k8s3.jpg)
 
 > **Note1:** I have an alias for the kubectl command. The `k` commands in the screenshots refer to `kubectl` (`alias k="kubectl"`)
 
