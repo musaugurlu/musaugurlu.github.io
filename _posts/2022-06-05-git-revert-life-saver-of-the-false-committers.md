@@ -7,7 +7,7 @@ image:
   path: single-revert.png
 categories: [DevOps, Git]
 tags: [git, cloud]
-date: 2022-06-04 16:00 -0400
+date: 2022-06-05 16:00 -0400
 ---
 
 ## Git Revert: Life Saver of the False Committers
