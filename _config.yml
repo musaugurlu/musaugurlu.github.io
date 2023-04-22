@@ -124,14 +124,14 @@ jekyll_compose:
   default_front_matter:
     drafts:
       description: A New Post
-      img_path:
+      img_path: /assets/img/posts/
       image:
         path:
       categories: Miscellaneous
       tags: draft, misc,
     posts:
       description: "A New Post"
-      img_path:
+      img_path: /assets/img/posts/
       image:
         path:
       categories: Miscellaneous

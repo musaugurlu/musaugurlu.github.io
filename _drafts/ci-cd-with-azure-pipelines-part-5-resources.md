@@ -1,8 +1,10 @@
 ---
 layout: post
-title: 'CI-CD with Azure Pipelines: Part 5 - Resources'
-description: A New Post
+title: "CI-CD with Azure Pipelines: Part 5 - Resources"
+description: "CI-CD with Azure Pipelines: Part 5 - Resources"
+img_path: /assets/img/posts/ci-cd-with-azure-pipelines-part-5-resources
 image:
-category: Miscellaneous
-tags: draft, misc,
+  path:
+categories: [DevOps, Pipeline]
+tags: [azure, cicd, pipeline, cloud, devops]
 ---
